@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Services | Tech &amp; Student Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader" class="show"><div class="spin"></div><strong>Loading…</strong></div>
+<div id="toast"></div>
+
+<!-- Sidebar -->
+<button id="menuBtn" aria-label="Menu">☰</button>
+<div id="scrim"></div>
+<aside id="side">
+  <div class="logo">💻 TechHub</div>
+  <nav>
+    <a href="home.html">🏠 Home</a>
+    <a href="services.html" class="on">🧰 Services</a>
+    <a href="notices.html">📢 Notice Board <em class="dot">5</em></a>
+    <a href="request.html">📝 Request Service</a>
+    <a href="dashboard.html">📊 My Dashboard</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+  <div class="side-auth" id="guestBox">
+    <a class="btn wa" href="login.html">🔐 Login</a>
+    <a class="btn ghost" href="register.html" style="color:#fff;border-color:#fff">✨ Create Account</a>
+  </div>
+  <div class="side-auth hide" id="userBox">
+    <div class="me">👤 <span id="meName"></span></div>
+    <button class="btn ghost logout" style="color:#fff;border-color:#fff">🚪 Logout</button>
+  </div>
+</aside>
+
+<div class="page">
+<section class="view active">
+<div class="wrap">
+
+
+<h2>HELB Services</h2>
+<p class="sub">Full help with every stage of your HELB loan.</p>
+<div class="grid">
+<div class="card"><img class="logo-img" src="images/helb-first-time-application.svg" alt="HELB First-Time Application logo" width="64" height="64"><h3>HELB First-Time Application</h3><p>Apply for your first HELB loan correctly, with all documents and details checked.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20HELB%20First-Time%20Application">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=HELB%20First-Time%20Application">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/helb-loan-appeal.svg" alt="HELB Loan Appeal logo" width="64" height="64"><h3>HELB Loan Appeal</h3><p>Not satisfied with your award? Get help preparing and submitting a strong appeal.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20HELB%20Loan%20Appeal">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=HELB%20Loan%20Appeal">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/helb-subsequent-application.svg" alt="HELB Subsequent Application logo" width="64" height="64"><h3>HELB Subsequent Application</h3><p>Renew your loan each academic year without errors or delays.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20HELB%20Subsequent%20Application">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=HELB%20Subsequent%20Application">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/helb-details-update.svg" alt="HELB Details Update logo" width="64" height="64"><h3>HELB Details Update</h3><p>Update phone, bank, institution, or personal details on your HELB account.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20HELB%20Details%20Update">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=HELB%20Details%20Update">Request</a></div></div>
+</div>
+
+<h2>University &amp; Government Applications</h2>
+<p class="sub">Accurate applications with no stress or missed deadlines.</p>
+<div class="grid">
+<div class="card"><img class="logo-img" src="images/kuccps-application.svg" alt="KUCCPS Application logo" width="64" height="64"><h3>KUCCPS Application</h3><p>Course selection, application and revision of choices on the KUCCPS portal.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20KUCCPS%20Application">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=KUCCPS%20Application">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/admission-letter-download.svg" alt="Admission Letter Download logo" width="64" height="64"><h3>Admission Letter Download</h3><p>Download and print your university or college admission letter.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20Admission%20Letter%20Download">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Admission%20Letter%20Download">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/kra-pin-application.svg" alt="KRA PIN Application logo" width="64" height="64"><h3>KRA PIN Application</h3><p>Get your KRA PIN registered, plus returns filing and PIN retrieval.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20KRA%20PIN%20Application">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=KRA%20PIN%20Application">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/ecitizen-other-portals.svg" alt="eCitizen &amp; Other Portals logo" width="64" height="64"><h3>eCitizen &amp; Other Portals</h3><p>Help with eCitizen, NSSF, SHA and other online government services.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20need%20help%20with%3A%20eCitizen%20%26%20Other%20Portals">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=eCitizen%20%26%20Other%20Portals">Request</a></div></div>
+</div>
+
+<h2>Academic Support</h2>
+<p class="sub">Professional writing and document services.</p>
+<div class="grid">
+<div class="card"><img class="logo-img" src="images/project-proposal-writing.svg" alt="Project Proposal Writing logo" width="64" height="64"><h3>Project Proposal Writing</h3><p>Well structured proposals with clear objectives, methodology and references.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Project%20Proposal%20Writing">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Project%20Proposal%20Writing">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/assignment-typing.svg" alt="Assignment Typing logo" width="64" height="64"><h3>Assignment Typing</h3><p>Fast, neat typing of handwritten notes and assignments in Word.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Assignment%20Typing">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Assignment%20Typing">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/presentation-design.svg" alt="Presentation Design logo" width="64" height="64"><h3>Presentation Design</h3><p>Clean, professional PowerPoint slides for class or defence.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Presentation%20Design">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Presentation%20Design">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/cv-cover-letters.svg" alt="CV &amp; Cover Letters logo" width="64" height="64"><h3>CV &amp; Cover Letters</h3><p>Modern CVs and cover letters for attachment and job applications.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20CV%20%26%20Cover%20Letters">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=CV%20%26%20Cover%20Letters">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/printing-document-formatting.svg" alt="Printing &amp; Document Formatting logo" width="64" height="64"><h3>Printing &amp; Document Formatting</h3><p>Formatting to your university standards, plus PDF conversion.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Printing%20%26%20Document%20Formatting">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Printing%20%26%20Document%20Formatting">Request</a></div></div>
+</div>
+
+<h2>Tech &amp; Software Services</h2>
+<p class="sub">Keep your laptop and phone running smoothly.</p>
+<div class="grid">
+<div class="card"><img class="logo-img" src="images/windows-office-installation.svg" alt="Windows &amp; Office Installation logo" width="64" height="64"><h3>Windows &amp; Office Installation</h3><p>Clean install and setup of Windows and Microsoft Office, with genuine licence activation.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Windows%20%26%20Office%20Installation">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Windows%20%26%20Office%20Installation">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/software-updates.svg" alt="Software Updates logo" width="64" height="64"><h3>Software Updates</h3><p>Safe updates for Windows, Office, drivers and apps to keep your system secure.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Software%20Updates">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Software%20Updates">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/antivirus-virus-removal.svg" alt="Antivirus &amp; Virus Removal logo" width="64" height="64"><h3>Antivirus &amp; Virus Removal</h3><p>Remove viruses and protect your laptop from future threats.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Antivirus%20%26%20Virus%20Removal">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Antivirus%20%26%20Virus%20Removal">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/laptop-tune-up.svg" alt="Laptop Tune-Up logo" width="64" height="64"><h3>Laptop Tune-Up</h3><p>Fix slow performance, free up storage and optimise startup.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Laptop%20Tune-Up">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Laptop%20Tune-Up">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/website-portfolio-design.svg" alt="Website &amp; Portfolio Design logo" width="64" height="64"><h3>Website &amp; Portfolio Design</h3><p>Simple, professional websites for students and small businesses.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Website%20%26%20Portfolio%20Design">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Website%20%26%20Portfolio%20Design">Request</a></div></div>
+<div class="card"><img class="logo-img" src="images/programming-help.svg" alt="Programming Help logo" width="64" height="64"><h3>Programming Help</h3><p>Guidance with Java, Python, PHP, HTML and CSS projects.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20need%20help%20with%3A%20Programming%20Help">💬 WhatsApp</a><a class="btn ghost" href="request.html?service=Programming%20Help">Request</a></div></div>
+</div>
+
+
+</div>
+</section>
+
+<footer>
+  <h4>Independent service provider, not affiliated with HELB, KUCCPS, KRA or any government body · 📞 +254 700 000 000 · ✉️ you@example.com</h4>
+  <div class="wrap" style="color: blues;">© <span id="yr"></span> Tech &amp; Student Services · All rights Reserved</div>
+</footer>
+</div>
+
+<!-- Popup -->
+<div class="modal" id="popup"><div class="box center">
+  <div class="pi" id="pIcon"></div><h3 id="pTitle"></h3><p id="pText" class="note"></p>
+  <button class="btn wa" data-close style="justify-self:center">OK</button>
+</div></div>
+
+<a class="btn wa float" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.">💬 WhatsApp</a>
+<script src="common.js"></script>
+</body>
+</html>

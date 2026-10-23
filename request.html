@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Request a Service | Tech &amp; Student Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background:linear-gradient(135deg, #1d4ed8, #0ea5e9);">
+
+<div id="loader" class="show"><div class="spin"></div><strong>Loading…</strong></div>
+<div id="toast"></div>
+
+<!-- Sidebar -->
+<button id="menuBtn" aria-label="Menu">☰</button>
+<div id="scrim"></div>
+<aside id="side">
+  <div class="logo">💻 TechHub</div>
+  <nav>
+    <a href="home.html">🏠 Home</a>
+    <a href="services.html">🧰 Services</a>
+    <a href="notices.html">📢 Notice Board <em class="dot">5</em></a>
+    <a href="request.html" class="on">📝 Request Service</a>
+    <a href="dashboard.html">📊 My Dashboard</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+  <div class="side-auth" id="guestBox">
+    <a class="btn wa" href="login.html">🔐 Login</a>
+    <a class="btn ghost" href="register.html" style="color:#fff;border-color:#fff">✨ Create Account</a>
+  </div>
+  <div class="side-auth hide" id="userBox">
+    <div class="me">👤 <span id="meName"></span></div>
+    <button class="btn ghost logout" style="color:#fff;border-color:#fff">🚪 Logout</button>
+  </div>
+</aside>
+
+<div class="page">
+<section class="view active">
+<div class="wrap">
+<h2 id="request">Request a Service</h2>
+<p class="sub" style="color: white;">Fill in the form and send it straight to WhatsApp or email.</p>
+<form id="reqForm">
+  
+  <div><label for="name">Full name</label><input id="name" required placeholder="Your name"></div>
+  <div><label for="phone">Phone / WhatsApp</label><input id="phone" required placeholder="07XX XXX XXX"></div>
+  <div><label for="email">Email (optional)</label><input id="email" type="email" placeholder="you@example.com"></div>
+  <div><label for="uni">University / Institution</label><input id="uni" placeholder="e.g. University of Nairobi"></div>
+  <div class="full"><label for="service">Service needed</label>
+    <select id="service" required>
+      <option value="" disabled selected>Select a service</option>
+      <option>HELB First-Time Application</option>
+      <option>HELB Loan Appeal</option>
+      <option>HELB Subsequent Application</option>
+      <option>HELB Details Update</option>
+      <option>KUCCPS Application</option>
+      <option>Admission Letter Download</option>
+      <option>KRA PIN Application</option>
+      <option>eCitizen &amp; Other Portals</option>
+      <option>Project Proposal Writing</option>
+      <option>Assignment Typing</option>
+      <option>Presentation Design</option>
+      <option>CV &amp; Cover Letters</option>
+      <option>Printing &amp; Document Formatting</option>
+      <option>Windows &amp; Office Installation</option>
+      <option>Software Updates</option>
+      <option>Antivirus &amp; Virus Removal</option>
+      <option>Laptop Tune-Up</option>
+      <option>Website &amp; Portfolio Design</option>
+      <option>Programming Help</option>
+      <option>Other (describe below)</option>
+    </select></div>
+  <div class="full"><label for="details">Details of your request</label><textarea id="details" rows="4" required placeholder="Explain what you need, deadlines, and any relevant info (e.g. course, year of study, topic)."></textarea></div>
+  <div class="full actions">
+    <button type="button" class="btn wa" id="sendWa">💬 Send via WhatsApp</button>
+    <button type="button" class="btn ghost" id="sendMail">✉️ Send via Email</button>
+  </div>
+  <p class="full note">🔒 Never send your passwords or PINs in the form. I will tell you exactly what is needed once we talk.</p>
+</form>
+
+</div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Tech &amp; Student Services · Independent service provider, not affiliated with HELB, KUCCPS, KRA or any government body · 📞 +254 700 000 000 · ✉️ you@example.com</div>
+</footer>
+</div>
+
+<!-- Popup -->
+<div class="modal" id="popup"><div class="box center">
+  <div class="pi" id="pIcon"></div><h3 id="pTitle"></h3><p id="pText" class="note"></p>
+  <button class="btn wa" data-close style="justify-self:center">OK</button>
+</div></div>
+
+<a class="btn wa float" target="_blank" rel="noopener" href="https://wa.me/254700000000?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.">💬 WhatsApp</a>
+<script src="common.js"></script>
+<script src="request.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: rgb(16, 114, 180);
+align-items: center;
+justify-content: center;
+display: flex;
+font-family: Verdana, Geneva, Tahoma, sans-serifs;
+}
+.card{
+
+    width: 350px;
+    background: whitesmoke;
+    padding: 30px;
+min-height: 100uv;
+margin: 20px;
+border-radius: 8px;
+}
+h2{
+    text-align: center;
+    color: rgb(38, 7, 177);
+}
+p{
+    text-align: center;
+    font-family: monospace;
+}
+label{
+display: block;
+margin: 12px 0 4px;
+
+
+}
+
+input{
+border:1px solid var(--line);
+  padding: 12px;  
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #c5cdd8;
+}
+input:focus{outline:2px solid var(--acc);border-color:transparent}
+button{
+
+margin-top: 18px;
+padding: 10px;
+border-radius: 6px;
+width: 100%;
+background:#1f6feb ;
+color: white;
+font-size: large;
+border: 0;
+cursor: pointer;
+}
+button:hover{
+
+    background: rgb(6, 133, 138);
+
+}
+a{
+
+    margin-top: 10px;
+    color: #1f6feb;
+    text-decoration: dotted;
+}
+hr{
+    width: 80%;
+    margin-top: 12px;
+}
+.acc{
+text-align: center;
+margin-top: 18px;
+}
+.link{
+    margin-top: 12px;
+}
+p{
+
+    color: #1f6feb;
+
+}

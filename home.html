@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Home | Tech &amp; Student Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" class="show"><div class="spin"></div><strong>Loading…</strong></div>
+<div id="toast"></div>
+
+<!-- Sidebar -->
+<button id="menuBtn" aria-label="Menu">☰</button>
+<div id="scrim"></div>
+<aside id="side">
+  <div class="logo">💻 TechHub</div>
+  <nav>
+    <a href="home.html" class="on">🏠 Home</a>
+    <a href="services.html">🧰 Services</a>
+    <a href="notices.html">📢 Notice Board <em class="dot">5</em></a>
+    <a href="request.html">📝 Request Service</a>
+    <a href="dashboard.html">📊 My Dashboard</a>
+    <a href="contact.html">📞 Contact</a>
+     <a href="#">👤 Admin Panel</a>
+
+  </nav>
+  <div class="side-auth" id="guestBox">
+    <a class="btn wa" href="login.html">🔐 Login</a>
+    <a class="btn ghost" href="register.html" style="color:#fff;border-color:#fff">✨ Create Account</a>
+  </div>
+  <div class="side-auth hide" id="userBox">
+    <div class="me">👤 <span id="meName"></span></div>
+    <button class="btn ghost logout" style="color:#fff;border-color:#fff">🚪 Logout</button>
+  </div>
+</aside>
+
+<div class="page">
+<section class="view active">
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Tech &amp; Student Services</h1>
+    <p>Fast, reliable and affordable help for university students: loans, applications, documents, projects and software. Message me and get sorted today.</p>
+    <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.">💬 Chat on WhatsApp</a>
+    <a class="btn alt" href="request.html">📝 Request a Service</a>
+    <a class="btn alt" href="register.html">✨ Create Account</a>
+  </div>
+</header>
+<div class="ticker"><div class="track">
+  <span>📢 Apply for HELB early and avoid last-minute stress</span>
+  <span>🎓 KUCCPS revision? Send me your details today</span>
+  <span>🧾 Remember to file your KRA returns on time</span>
+  <span>🎁 First-time clients get a friendly discount</span>
+
+  <span aria-hidden="true">📢 Apply for HELB early and avoid last-minute stress</span>
+  <span aria-hidden="true">🎓 KUCCPS revision? Send me your details today</span>
+  <span aria-hidden="true">🧾 Remember to file your KRA returns on time</span>
+  <span aria-hidden="true">🎁 First-time clients get a friendly discount</span>
+</div></div>
+<div class="wrap">
+<h2>How It Works</h2>
+<div class="steps">
+  <div class="step"><b>1</b><br><strong>Contact me</strong><br><span class="note">WhatsApp or fill the form below.</span></div>
+  <div class="step"><b>2</b><br><strong>Share details</strong><br><span class="note">Send what is needed for your service.</span></div>
+  <div class="step"><b>3</b><br><strong>Get a quote</strong><br><span class="note">Clear price before any work starts.</span></div>
+  <div class="step"><b>4</b><br><strong>Get work done</strong><br><span class="note">Done quickly and confirmed with you.</span></div>
+</div>
+
+
+</div>
+
+</section>
+
+<footer>
+<h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> DISCLAIMER: We are an Independent service provider, not affiliated with HELB, KUCCPS, KRA or any government body · 📞 +254 703754836 · ✉️ ogeto783@gmail.com</h4>
+  <div class="wrap" style="color: rgb(47, 50, 255);"> © <span id="yr"></span> Tech &amp; Student Services ·All rights Reserved</div>
+</footer>
+</div>
+
+<!-- Popup -->
+<div class="modal" id="popup"><div class="box center">
+  <div class="pi" id="pIcon"></div><h3 id="pTitle"></h3><p id="pText" class="note"></p>
+  <button class="btn wa" data-close style="justify-self:center">OK</button>
+</div></div>
+
+<a class="btn wa float" target="_blank" rel="noopener" href="https://wa.me/254703754836?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.">💬 WhatsApp</a>
+<script src="common.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminPanel</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 100px;
+    background: white;
+    width: 450px;
+     margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+}
+.container h2{
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+.join{
+
+margin-top: 20px;
+    text-align: center;
+}
+.logo{
+    margin-left: 45%;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+.container p{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #64748b;
+    color: #1d4ed8;
+}
+.inputs{
+    margin-bottom: 16px;
+}
+
+.inputs label{
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-weight: bold;
+}
+
+
+.inputs input{
+width: 100%;
+padding: 12px;
+border: 1px solid #cbd5e1;
+border-radius: 6px;
+outline: none;
+
+
+}
+footer{
+    text-align:center;
+  
+}
+.inputs:focus{
+    border-color: #2563eb;
+}
+button{
+    width: 80%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+button:hover{
+    background: #1dd890;
+}
+.backlink{
+    text-align: left;
+    margin-top: 20px;
+    
+}
+#message{
+    margin-top: 15px;
+    font-size: 14px;
+}
+</style>
+
+
+
+    <div class="container">
+   <div class="logo">👤</div>     
+<h2>Admin Panel</h2>
+<p>Account Registration</p>
+<FORm id="form">
+<div class="inputs">
+<LAbel for="username">Email</LAbel>
+<input type="email" id="username" placeholder="Enter admin username" required>
+</div>
+<div class="inputs">
+<LAbel for="username">UIN Number</LAbel>
+<input type="text" id="number" placeholder="eg 45TCPM026" required>
+</div>
+<div class="inputs">
+<LAbel for="username">Password</LAbel>
+<input type="text" id="password" placeholder="Enter admin username" required>
+</div>
+<div class="inputs">
+<LAbel for="Password">Confirm Password</LAbel>
+<input type="text" id="cpassword" placeholder="confirm" required>
+</div>
+<button type="submit" id="submit">Register</button>
+<div id="message"></div>
+</FORm>
+
+<div class="backlink"> <a href="home.html">Back to Home</a></div><br><hr>
+<div class="join">Already have an Account?<a href="">Login</a></div>
+
+    </div>
+    <script>
+
+        document.getElementById("form").addEventListener("submit", function(event) {event.preventDefault();
+
+document.getElementById("message").textContent = "Hello,Login system is not connected yet.";
+document.getElementById("message").style.color = "red";
+
+
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    
