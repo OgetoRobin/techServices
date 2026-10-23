@@ -1,6 +1,6 @@
 // Shared settings and helpers (loaded on every page)
-var PHONE = "254700000000";   // your WhatsApp number
-var EMAIL = "you@example.com"; // your email
+var PHONE = "254703754836";   // your WhatsApp number
+var EMAIL = "ogeto783@gmail..com"; // your email
 
 var $ = function (id) { return document.getElementById(id); };
 function get(k, d) { try { return JSON.parse(localStorage.getItem(k)) || d; } catch (e) { return d; } }
