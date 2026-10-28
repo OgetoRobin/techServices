@@ -51,10 +51,13 @@ body {
 }
 
 .hero {
+ border-radius: 10px;
+  margin: 19px;
  background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
   color: #fff;
   padding: 54px 0 64px;
   text-align: center;
+  
 }
 .hero h1 {
   margin: 0 0 10px;
@@ -62,6 +65,7 @@ body {
 }
 
 .hero p {
+   color: whitesmoke;
   max-width: 620px;
   margin: 0 auto 22px;
 }
